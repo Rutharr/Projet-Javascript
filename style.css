@@ -1,0 +1,56 @@
+#blackjack-table {
+    background-color: green;
+    width: 1800px;
+    height: 900px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hand {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hand .card {
+    background-image: url("cartes/dos-bleu.png");
+    background-size: cover;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-right: -50px;
+    transform: rotate(15deg);
+  }
+  #deck {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+  }
+  
+  .card-back {
+    background-image: url("cartes/dos-bleu.png");
+    background-size: cover;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(-15deg);
+  }
+
+  #bank {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
