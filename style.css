@@ -1,3 +1,10 @@
+h3 {
+  position: absolute;
+  font-size: 30px;
+  margin-top: -375px;
+  margin-left: 650px;
+}
+
 .croupier-container {
   display: flex;
   justify-content: center;
@@ -7,6 +14,13 @@
 .croupier-container h2 {
   text-align: center;
   margin-top: 90px;
+}
+
+.croupier-container h3 {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 0px;
+  margin-top: 220px;
 }
 
 .joueur-container {
@@ -22,4 +36,43 @@
 
 .card {
   margin: 0 5px;
+}
+
+#bouton-commencer {
+  width: 25%;
+  height: 200px;
+  font-size: 50px;
+  margin-top: 15%;
+  margin-left: 40%;
+}
+#bouton-tirer {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  margin-top: 320px;
+  margin-left: 38%;
+}
+
+#bouton-rester {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  margin-top: 320px;
+  margin-left: 50%;
+}
+
+#bouton-recommencer {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  margin-top: 350px;
+  margin-left: 40%;
+}
+
+.joueur-points {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 900px;
+  margin-top: 675px;
 }
