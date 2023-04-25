@@ -1,14 +1,23 @@
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
 h3 {
   position: absolute;
   font-size: 30px;
   margin-top: -375px;
-  margin-left: 650px;
+  margin-left: 38%;
+  color: white;
 }
 
 .croupier-container {
   display: flex;
   justify-content: center;
   margin-top: 150px;
+  color: white;
 }
 
 .croupier-container h2 {
@@ -27,6 +36,7 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 250px;
+  color: white;
 }
 
 .joueur-container h2 {
@@ -42,8 +52,8 @@ h3 {
   width: 25%;
   height: 200px;
   font-size: 50px;
-  margin-top: 15%;
-  margin-left: 40%;
+  margin-top: 18%;
+  margin-left: 38%;
 }
 #bouton-tirer {
   display: none;
@@ -73,6 +83,12 @@ h3 {
   position: absolute;
   font-size: 30px;
   font-weight: bold;
-  margin-left: 900px;
   margin-top: 675px;
+  margin-left: 46%;
+  color: white;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  background-size: auto;
 }

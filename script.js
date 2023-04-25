@@ -162,10 +162,23 @@ function tirerCarte() {
 
   // Si le joueur a dépassé 21 points, il perd la partie
   if (totalPoints > 21) {
-    joueurPointsContainer.innerText = "Perdu ! Vous avez dépasser 21";
+    joueurPointsContainer.innerText = "Perdu ! Vous avez dépassé 21";
+    joueurPointsContainer.style.marginLeft="40%"; 
     document.getElementById("bouton-tirer").style.display = "none";
     document.getElementById("bouton-rester").style.display = "none";
     document.getElementById("bouton-recommencer").style.display = "inline-block";
+    
+
+    let carteCroupier = document.querySelector(".croupier-container .card:first-child");
+    carteCroupier.src = "cartes/" + croupierCartes[0].valeur + "-" + croupierCartes[0].couleur + ".png";
+  
+    let croupierCartesContainer = document.querySelector(".croupier-container");
+    let pointsCroupier = calculerPoints(croupierCartes);
+    let croupierPointsText = document.createElement("h3");
+    croupierPointsText.innerText = "Points du croupier: " + pointsCroupier;
+    croupierCartesContainer.appendChild(croupierPointsText);
+  
+    let resultatText = document.createElement("h3");
   }
 }
 
@@ -183,13 +196,15 @@ function Rester() {
   let resultatText = document.createElement("h3");
 
   if (pointsCroupier > calculerPoints(joueurCartes)){
-    resultatText.innerText = "Vous avez perdu, le croupier a une meilleur main !";
+    resultatText.style.marginLeft="33%"
+    resultatText.innerText = "Vous avez perdu, le croupier a une meilleure main !";
   }
   else if(pointsCroupier == calculerPoints(joueurCartes)){
     resultatText.innerText = "C'est une égalité, aucun gagnant !";
   }
   else {
-    resultatText.innerText = "Félicitations vous avez battu le croupier !";
+    resultatText.style.marginLeft="36%"
+    resultatText.innerText = "Félicitations, vous avez battu le croupier !";
   }
 
   document.body.appendChild(resultatText);
